@@ -1,0 +1,1 @@
+We can open the sql query files with note pad or note pad ++.

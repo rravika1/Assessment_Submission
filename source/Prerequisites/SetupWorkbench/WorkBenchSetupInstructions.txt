@@ -1,0 +1,20 @@
+For this assesment I utilized Snowflake cloud provider platform for creation of tables, importing data and executing the queries.
+The quries are wriiten in SQL. (they can be run in sql server managment studio as well)
+Navigate to TestData folder and follow the instructions to get input test data json files.
+You can navigate to https://signup.snowflake.com/
+Provide the required details to singup/create free 30 day trial account.
+Once created, login with your credentials.
+Select Projects -> Worksheets
+Create Receipts table using the Receipts_Table.sql script.
+Create Users table using the Users_Table.sql script.
+Create Brands table using the Brands_Table.sql script.
+Flatten the Receipts_Table into RECEIPTS_FLATTENED table and further break it into RPTS and Items table.
+  Create Receipts Flattend table using Create_RECEIPTS_FLATTENED_Table.sql script.
+  Create Receipts Flattend table(RPTS) using Create_Receipts_Flattened_Table.sql script.
+  Create Items table using Create_Items_Table.sql script.
+Flatten the Brands and Users Table.
+  Create Brands Flattend table using Create_Brands_Flattened_Table.sql script.
+  Create Users Flattend table using Create_Users_Flattened_Table.sql script.
+
+Navigate to source/Queries table.
+Select required queries and run it.
