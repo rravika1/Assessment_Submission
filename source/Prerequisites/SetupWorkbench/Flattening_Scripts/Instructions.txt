@@ -1,0 +1,4 @@
+Please download the files from CleanedJsonFiles folder before running the scripts.
+Run the scripts in pycham.
+Each script will generate an output json file.
+These files are used in creation of tables in snowflake by just uploading them.(see line 8 of WorkBenchSetupInstructions)

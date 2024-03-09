@@ -1,4 +1,6 @@
-Download the zip files to your local machine.
+These are input files provided for assesment
+
+If required you can download the zip files to your local machine.
 
 Right click and slect extract here.
 

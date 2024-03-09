@@ -1,4 +1,26 @@
 -- Top 5 Brands by receipts scanned for most recent month.
-select b.name as brand_name, 
-count(*) as receipts_scanned from brand_flattened b join items it on b.brandcode = it.rewardsreceiptitemlist_brandcode join rpts r on r.id=it.id where date_trunc('month', r.datescanned) = (      select max(date_trunc('month', datescanned))from rpts) group by b.name order by receipts_scanned desc limit 5;
+SELECT
+    b.name AS brand_name,
+    COUNT(*) AS receipts_scanned
+FROM
+    brands b
+JOIN
+    items it ON b.brandcode = it.brandcode
+JOIN
+    rpts_flat r ON r.id = it.RECEIPT_ID
+WHERE
+    DATE_TRUNC('month', TO_TIMESTAMP(r.DATESCANNED_$DATE / 1000)) =
+    (
+        SELECT
+            MAX(DATE_TRUNC('month', TO_TIMESTAMP(r2.DATESCANNED_$DATE / 1000)))
+        FROM
+            rpts_flat r2
+    )
+GROUP BY
+    b.name
+ORDER BY
+    receipts_scanned DESC
+LIMIT
+    5;
+
 

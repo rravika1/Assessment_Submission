@@ -1,6 +1,6 @@
 Query 1: No Records (as there is no recent data)
 Query 2: No Records (as there is no recent data)
-Query 3: FINISHED (Did not find accepted value, hence considered finished)
-Query 4: FINISHED (Did not find accepted value, hence considered finished)
-Query 5: KNORR 24
-Query 6: No Records (as there is no recent data in 6 months)
+Query 3: FINISHED (Did not find accepted value in data files provided, hence considered finished)
+Query 4: FINISHED (Did not find accepted value in data files provided, hence considered finished)
+Query 5: Cracker Barrel Cheese 109.46
+Query 6: Pepse 118
